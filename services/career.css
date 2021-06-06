@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+.card-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1536px;
+    height: 720px;
+    background: #fff;
+}
+
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    transition: .3s linear;
+    background: url(images/career.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .imgBx:before {
+    content: 'career';
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    color: #fff;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+.container .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 50px 0px 50px;
+}
+
+.container .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.4em;
+    line-height: 1em;
+    color: #444;
+}
+
+.container .details h2 span {
+    font-size: 0.45em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .details p {
+    max-width: 85%;
+    margin-left: 10%;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 36px;
+}
+
+.container .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #000;
+    float: left;
+}
+.container .details button {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+}
+.container .details .page-link-head h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-top: -20px;
+}
+.container .details .page-link-head .page-links a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.container .details .page-link-head .page-links .ther-name{
+  margin-left: 10px;
+}
+
+.container .details button {
+    border-radius: 35px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 2px;
+    float: right;
+    opacity: 0.6;
+}
+
+.container .details button span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.container .details .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .container .details .button:hover span {
+    padding-right: 25px;
+  }
+
+  .container .details .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*--------------------------Footer-------------------------*/
+
+.footer{
+	  background-color: #f5f5f5;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+.row{
+  display: flex;
+  margin-left: 150px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: 'career';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #1bbc9c;
+	height: 2px;
+	box-sizing: border-box;
+	width: 110px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li{
+  font-weight: 300;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #bbbbbb;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #8d8e91;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	background-color: #1bbc9c;
+  opacity: 0.8;
+}
+ul{
+  list-style: none;
+  padding-inline-start: 0px;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+}
+}
+@media(max-width: 991px){
+  .row{
+    display: block;
+    margin-left: 15px;
+  }
+  .footer-col{
+    min-width: 25%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    flex-wrap: nowrap!important;
+}
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+    .card-sec .container {
+        height: auto;
+    }
+    .card-sec .container .imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: 350px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .card-sec .container .imgBx:before {
+        content: '';
+    }
+    .card-sec .container .imgBx img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .card-sec .container .details{
+      padding: 40px;
+    }
+    .card-sec .details {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .card-sec .container .details p {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
